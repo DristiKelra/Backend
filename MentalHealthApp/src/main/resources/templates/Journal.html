@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>MentScape Journal</title>
+	<link href="/css/journal.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<nav>
+		<div class="navcontainer">
+	 <a th:href="@{/Homepage}"><img class="LogoImg" src="NewLogo.png"></a>
+			<ul>
+				<li><a th:href="@{/Homepage}">Home</a></li>
+                <li><a th:href="@{/Advice}">Advice</a></li>
+                <li><a th:href="@{/Quiz}">Quiz</a></li>
+                <li><a th:href="@{/Map}">Map</a></li>
+                <li><a th:href="@{/journal}">Journal</a></li>
+                <li><a th:href="@{/Calendar}">Calendar</a></li>
+                <li><a th:href="@{/#}">About</a></li>
+			</ul>
+			<div class="NavgationLogo">
+			    <a th:href="@{/Calendar}"><img src="calendar.png"></a>
+                <a th:href="@{/Loginpage}"><img src="user.png"></a>
+
+			</div>
+		</div>
+	</nav>
+	<div class="Introduction center">
+
+		<div >
+
+			<div class="centered-element">
+				<h1>Journal</h1>
+			</div>
+            <form th:action ="@{/journaldetails}" method="POST" th:object ="${journal}">			
+			<input type="text" class="text-box" th:field="*{title}" placeholder="Title" required>		
+			<input type="text" class="text-box bigger" th:field="*{description}" placeholder="Journal Entry" required >	
+			<br></br>				
+			<div class="container"> 
+				<!-- <span> </span> -->
+				<button id="reset" style="width:250px;"><a th:href ="@{/list_thoughts}">View previous entries</a></button>
+				<button id="submit">Submit</button>
+			</div>
+			
+			
+		  </form>	
+
+		</div>
+
+	</div>
+</body>
+
+</html>
