@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="utf-8">
+  <title> MentScape</title>
+  <meta name="viewport" content="Width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/homepage.css">
+</head>
+
+<body>
+ 
+  <nav>
+    <div class="navcontainer">
+            <a th:href="@{/Homepage}"><img class="LogoImg" src="NewLogo.png"></a>
+      <ul>
+         <li><a th:href="@{/Homepage}">Home</a></li>
+                <li><a th:href="@{/Advice}">Advice</a></li>
+                <li><a th:href="@{/Quiz}">Quiz</a></li>
+                <li><a th:href="@{/Map}">Map</a></li>
+                <li><a th:href="@{/journal}">Journal</a></li>
+               
+                <li><a th:href="@{/#}">About</a></li>
+      </ul>
+      <div class="NavgationLogo">
+
+       <a th:href="@{/Calendar}"><img src="calendar.png"></a>
+                <a th:href="@{/Loginpage}"><img src="user.png"></a>
+      </div>
+    </div>
+  </nav>
+  <div class="Introduction">
+    <div class="left-column">
+      <h1>MentScape help more about your</h1>
+      <h2>Help yourself reach your mental peak</h2>
+    </div>
+  </div>
+  <br></br>
+  <br></br>
+
+  <div>
+
+    <h3>What We Do</h3>
+    <p>To aid users aged 18 - 24 University/College students with their mental health challenges</p>
+    <br></br>
+    <div class="grid-container">
+
+      <element class=movetop>
+        <img src="doctor quiz.jpg" width="325" height="300" data-aos="fade-up-left" data-aos-duration="1000"
+          alt="">
+        <div class="grid-item">
+          <br></br>
+          <h4>QUIZ</h4>
+          <br></br>
+          <p3>Assess yourself</p3>
+          <br></br>
+          <br></br>
+          <span>&#10230;</span>
+
+        </div>
+      </element>
+
+      <element class=movetop>
+        <img src="map.jpg" width="325" height="300" data-aos="fade-up-left" data-aos-duration="1000" alt="">
+        <div class="grid-item">
+          <br></br>
+          <h4>MAP</h4>
+          <br></br>
+          <p3> We help you find Therapist near you</p3>
+          <br></br>
+          <br></br>
+          <span>&#10230;</span>
+
+        </div>
+      </element>
+
+      <element class=movetop>
+        <img src="journal.jpg" width="325" height="300" data-aos="fade-up-left" data-aos-duration="1000" alt="">
+        <div class="grid-item">
+          <br></br>
+          <h4>JOURNAL</h4>
+          <br></br>
+          <p3>Keep your health track </p3>
+          <br></br>
+          <br></br>
+          <span>&#10230;</span>
+
+        </div>
+      </element>
+
+      <element class=movetop>
+
+        <img src="doctorvisit.jfif" width="325" height="300" data-aos="fade-up-left" data-aos-duration="1000"
+          alt="">
+        <div class="grid-item">
+          <br></br>
+          <h4>CHAT SUPPORT</h4>
+          <br></br>
+          <p3>Chat with us to relax yourself</p3>
+          <br></br>
+          <br></br>
+          <span>&#10230;</span>
+
+        </div>
+      </element>
+
+    </div>
+  </div>
+  <br></br>
+  <br></br>
+
+  <div>
+    <h3>Mental Issues We Focus On</h3>
+    <p></p>
+
+    <br></br>
+    <div class="container">
+      <div class="card">
+        <div class="flip-card-inner">
+          <div class="card-front">
+            <img class="adhd" src="adhd.jpg" width="400" height="300" data-aos="fade-up-right"
+              data-aos-duration="1000" alt="">
+            <div class="item">
+              <br></br>
+              <h4>ADHD</h4>
+              <br></br>
+              <p3>Destress yourself </p3>
+              <br></br>
+              <br></br>
+              <span>&#10230;</span>
+            </div>
+          </div>
+
+          <div class="card-back">
+            <h5> <a href="../Advice/advice.html">ADHD</a></h5>
+            <p4>Attention deficit hyperactivity disorder</p4>
+            <br></br>
+            <br></br>
+            <h6>Main Types of ADHD </h6>
+            <br></br>
+            <ul>
+              <li>• Inattentive Type </li>
+              <br></br>
+              <li>• Hyperactive-Impulsive Type </li>
+              <br></br>
+              <li>• Combination Type </li>
+              <br></br>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="flip-card-inner">
+          <div class="card-front">
+            <img class="depression" src="depression.jpg" width="400" height="300" data-aos="fade-up-right"
+              data-aos-duration="1000" alt="">
+            <div class="item">
+              <br></br>
+              <h4>Depression</h4>
+              <br></br>
+              <p3>Help yourself</p3>
+              <br></br>
+              <br></br>
+              <span>&#10230;</span>
+            </div>
+          </div>
+          <div class="card-back">
+            <h5> <a href="../Advice/advice.html">Depression</a></h5>
+            <p4>Depression is a common and serious medical illness that negatively affects how you feel</p4>
+            <br></br>
+            <h6>Main Types of Depression</h6>
+            <br></br>
+            <ul>
+              <li>• Persistent Depressive Disorder </li>
+              <br></br>
+              <li>• Bipolar Disorder </li>
+              <br></br>
+              <li>• Seasonal Affective Disorder(SAD) </li>
+              <br></br>
+              <li>• Situatioal Depression </li>
+              <br></br>
+              <li>• Peripartum (Postpartum) Depression </li>
+              <br></br>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="card">
+        <div class="flip-card-inner">
+          <div class="card-front">
+            <img class="Anxiety" src="anxiety.jpg" width="400" height="300" data-aos="fade-up-right"
+              data-aos-duration="1000" alt="">
+            <div class="item">
+              <br></br>
+              <h4>Anxiety</h4>
+              <br></br>
+              <p3>Keep yourself Patient</p3>
+              <br></br>
+              <br></br>
+              <span>&#10230;</span>
+            </div>
+          </div>
+          <div class="card-back">
+            <h5> <a href="../Advice/advice.html">Anxiety</a></h5>
+            <p4>Anxiety is a feeling of stress, panic or fear that can affect your everyday life physically and
+              psychologically.</p4>
+            <br></br>
+            <br></br>
+            <h6>Main Types of Anxiety disorders</h6>
+            <br></br>
+            <ul>
+              <li>•Panic disorder</li>
+              <br></br>
+              <li>• Phobias such as claustrophobia</li>
+              <br></br>
+              <li>• Post-traumatic stress disorder (PTSD)</li>
+              <br></br>
+              <li>• Social anxiety disorder</li>
+              <br></br>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+</body>
+
+</html>
